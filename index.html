@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Discord 2.0</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-wrapper">
+        <div class="title">
+          <h3 class="title-text" id="local-peer"></h3>
+        </div>
+        <video id="local-stream" controls></video>
+      </div>
+      <div class="video-wrapper">
+        <div class="title">
+          <input
+            type="text"
+            class="remote-id-input"
+            id="remote-peer"
+            placeholder="Remote ID"
+          />
+          <button class="call-button" id="call-remote">Call</button>
+          <button class="hang-up-button" id="hang-up" disabled="true">
+            Hang
+          </button>
+        </div>
+        <video id="remote-stream" controls></video>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

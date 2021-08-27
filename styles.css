@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.video-wrapper {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-wrapper video {
+    border-radius: 10px;
+}
+
+.title {
+    padding: 10px;
+    background-color: peru;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .title-text {
+    font-weight: bold;
+    color: white;
+}
+
+video {
+    width: 100%;
+}
+
+.remote-id-input {
+    border-radius: 5px;
+    min-width: 60%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.call-button {
+    border-radius: 5px;
+    min-width: 15%;
+    margin-right: 10px;
+}
+
+.hang-up-button {
+    border-radius: 5px;
+    min-width: 15%;
+    background-color: red;
+    color: white;
+}
